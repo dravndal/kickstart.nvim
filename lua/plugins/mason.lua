@@ -30,13 +30,9 @@ return {
 
             nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]efinition')
             nmap('gh', "<cmd>Lspsaga lsp_finder <CR>", '[G]oto [D]efinition')
-            nmap('gd', ':Telescope lsp_definitions<CR>', '[G]oto [D]efinition')
             nmap('<leader>gd', '<cmd>Lspsaga peek_definition<CR>', '[G]oto [D]efinition')
-            nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
             nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
             nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-            nmap('<leader>so', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
-            nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
             nmap('<leader>t', "<cmd>Lspsaga term_toggle<CR>", '[W]orkspace [S]ymbols')
             nmap('<leader>o', "<cmd>Lspsaga outline<CR>", '[W]orkspace [S]ymbols')
 
