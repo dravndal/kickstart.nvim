@@ -46,8 +46,8 @@ vim.keymap.set('i', '<c-b>', '<esc>I', {noremap = true})
 
 vim.keymap.set('v', '<F7>', ':CarbonNowSh<CR>')
 
-vim.keymap.set('n', '<F8>', ":lua require('background').getBackground()<CR>")
-vim.keymap.set('n', '<F9>', ":lua require('background').changeBackground()<CR>")
+vim.keymap.set('n', '<F8>', ":lua require('util.background').getBackground()<CR>")
+vim.keymap.set('n', '<F9>', ":lua require('util.background').changeBackground()<CR>")
 
 -- Multiple cursors
 vim.cmd([[
