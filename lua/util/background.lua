@@ -13,7 +13,6 @@ local function set_background(folder)
 	local files = get_files(Path)
 
 	local file = files[math.random(#files)]
-    print("file: " ..file)
 	vim.fn.system("kitty @ --to=$KITTY_LISTEN_ON set-background-image " .. file)
 end
 
