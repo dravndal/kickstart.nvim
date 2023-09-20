@@ -21,11 +21,6 @@ return {
         { "<leader>so", "<cmd>Telescope lsp_document_symbols<CR>", "n", desc = "[so] Lsp symbols" },
         { "<leader>ws", "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>", "n", desc = "[ws] Lsp workspace symbols" },
         { "<leader>l", "<cmd>Telescope buffers<CR>", "n", desc = "[l] Open list of buffers" },
-        { "/", function ()
-            require("telescope.builtin").current_buffer_fuzzy_find({
-                previewer = false,
-            })
-        end, "n", desc = "[/] Current buffer fuzzy find" },
         { "<leader>sc", function ()
             require("telescope.builtin").live_grep({
                 winblend = 10,

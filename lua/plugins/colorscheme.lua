@@ -3,7 +3,7 @@ return {
         'rebelot/kanagawa.nvim',
         lazy = false,
         priority = 1000,
-        config = function() 
+        config = function()
             require('kanagawa').setup({
                 statementStyle = { bold = true },
                 typeStyle = {},
@@ -13,32 +13,32 @@ return {
                 terminalColors = true,      -- define vim.g.terminal_color_{0,17}
                 colors = {
                   theme = {
-                all = {
-                  ui = {
-                    bg_gutter = "none",
-                  }
-                }
+                    all = {
+                      ui = {
+                        bg_gutter = "none",
+                      }
+                    }
                   }
                 },
                 overrides = function(colors)
                   local theme = colors.theme
                   return {
-                  NormalFloat = { bg = "none" },
-                  FloatBorder = { bg = "none" },
-                  FloatTitle = { bg = "none" },
-                  TelescopeNormal = { bg = "#1c1c1c" },
-                  TelescopeBorder = { bg = "#1c1c1c" },
-                  TelescopePromptNormal = { bg = "#1c1c1c" },
-                  TelescopePromptBorder = { bg = "#1c1c1c" },
-                  TelescopeMatching = { bg = "#7E9CD8" },
-                  TelescopeSelection = { bg = "#FF9E3B" },
+                      NormalFloat = { bg = "none" },
+                      FloatBorder = { bg = "none" },
+                      FloatTitle = { bg = "none" },
+                      TelescopeNormal = { bg = "#1c1c1c" },
+                      TelescopeBorder = { bg = "#1c1c1c" },
+                      TelescopePromptNormal = { bg = "#1c1c1c" },
+                      TelescopePromptBorder = { bg = "#1c1c1c" },
+                      TelescopeMatching = { bg = "#7E9CD8" },
+                      TelescopeSelection = { bg = "#FF9E3B" },
 
-                  ['@method'] = { fg = "#FF9E3B"},
-                  ['@keyword.function'] = { fg = "#7E9CD8"},
-                  ['@variable'] = { fg = "#9CABCA"},
-                  ['@constructor'] = { fg = "#DCA561"},
-                  ['Visual'] = { bg = "#6A9589"},
-                  ['SagaShadow'] = { bg = nil},
+                      ['@method'] = { fg = "#FF9E3B"},
+                      ['@keyword.function'] = { fg = "#7E9CD8"},
+                      ['@variable'] = { fg = "#9CABCA"},
+                      ['@constructor'] = { fg = "#DCA561"},
+                      ['Visual'] = { bg = "#6A9589"},
+                      ['SagaShadow'] = { bg = nil},
                   }
                 end,
                 theme = "default"

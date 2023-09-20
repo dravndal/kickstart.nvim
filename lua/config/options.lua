@@ -32,7 +32,6 @@ vim.o.timeout = true
 vim.o.timeoutlen = 300
 vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
-vim.opt.cmdheight = 1
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.cmdheight = 0

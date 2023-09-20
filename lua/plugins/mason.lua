@@ -25,11 +25,11 @@ return {
             end
 
 
-            nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+            nmap('<leader>rn', "<cmd>Lspsaga rename", '[R]e[n]ame')
             nmap('<leader>ca', "<cmd>Lspsaga code_action<CR>", '[C]ode [A]ction')
 
             nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]efinition')
-            nmap('gh', "<cmd>Lspsaga lsp_finder <CR>", '[G]oto [D]efinition')
+            nmap('gh', "<cmd>Lspsaga finder <CR>", '[G]oto [D]efinition')
             nmap('<leader>gd', '<cmd>Lspsaga peek_definition<CR>', '[G]oto [D]efinition')
             nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
             nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
