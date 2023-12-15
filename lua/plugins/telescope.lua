@@ -24,7 +24,7 @@ return {
         { "<leader>sc", function ()
             require("telescope.builtin").live_grep({
                 winblend = 10,
-                search_dirs = {".","/home/danielravndal/work-projects/corepublish/"},
+                search_dirs = {".","/home/danielr/work/projects/corepublish/"},
                 additional_args = {"--no-ignore-vcs", "-F", "-Tmarkdown"},
             })
         end, "n", desc = "[sc] Fuzzysearch with library" },
@@ -32,7 +32,7 @@ return {
         { "<leader>cp", function ()
             require('telescope.builtin').find_files({
                 winblend = 10,
-                search_dirs = {".","/home/danielravndal/work-projects/corepublish/"},
+                search_dirs = {".","/home/danielr/work/projects/corepublish/"},
                 additional_args = {"--no-ignore-vcs", "-F", "-Tmarkdown"},
                 hidden = true
             })

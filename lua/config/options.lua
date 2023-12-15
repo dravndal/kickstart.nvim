@@ -30,9 +30,13 @@ vim.o.undofile = true
 vim.o.updatetime = 100
 vim.o.timeout = true
 vim.o.timeoutlen = 300
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = 'menu,menuone,noinsert'
 vim.o.termguicolors = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.cmdheight = 0
 vim.opt.expandtab = true
+vim.g.netrw_liststyle=3
+
+-- custom globals
+vim.g.skip_ts_context_commentstring_module = true

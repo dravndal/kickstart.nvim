@@ -49,5 +49,8 @@ return {
     {
         'NvChad/nvim-colorizer.lua',
         ft = { "scss", "css", "html" },
+        config = function()
+            require 'colorizer'.setup({})
+        end
     }
 }

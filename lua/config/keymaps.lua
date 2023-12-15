@@ -5,10 +5,12 @@
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('n', '<A-q>', ':bd<CR>')
 vim.keymap.set('n', '<tab>', ':bNext<CR>', { silent = true })
-vim.keymap.set('n', '<s-tab>', ':bprevious<CR>', { silent= true})
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+
+vim.keymap.set({ 'n', 'x', 'o' }, 'L', '$');
+vim.keymap.set({ 'n', 'x', 'o' }, 'H', '^');
 
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -44,10 +46,14 @@ vim.keymap.set('n', '<leader>hp', ":lua require('harpoon.ui').nav_prev()<CR>")
 vim.keymap.set('i', '<c-e>', '<esc>A', {noremap = true})
 vim.keymap.set('i', '<c-b>', '<esc>I', {noremap = true})
 
-vim.keymap.set('v', '<F7>', ':CarbonNowSh<CR>')
+vim.keymap.set('n', '<F3>', ":Explore<CR>", {silent=true})
+
+vim.keymap.set('v', '<F7>', ':CarbonNow<CR>')
 
 vim.keymap.set('n', '<F8>', ":lua require('util.background').getBackground()<CR>")
 vim.keymap.set('n', '<F9>', ":lua require('util.background').changeBackground()<CR>")
+
+vim.keymap.set('n', '<leader>gb', ":Gitsigns blame_line<CR>")
 
 -- Multiple cursors
 vim.cmd([[
