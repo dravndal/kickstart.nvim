@@ -30,19 +30,6 @@ vim.keymap.set('n', '<leader>Y', 'gg\"+yG')
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
-vim.keymap.set('n', '<leader>ha', ":lua require('harpoon.mark').add_file()<CR>")
-vim.keymap.set('n', '<leader>ho', ":lua require('harpoon.ui').toggle_quick_menu()<CR>")
-vim.keymap.set('n', '<C-1>', ":lua require('harpoon.ui').nav_file(1)<CR>")
-vim.keymap.set('n', '<C-2>', ":lua require('harpoon.ui').nav_file(2)<CR>")
-vim.keymap.set('n', '<C-3>', ":lua require('harpoon.ui').nav_file(3)<CR>")
-vim.keymap.set('n', '<C-4>', ":lua require('harpoon.ui').nav_file(4)<CR>")
-vim.keymap.set('n', '<C-5>', ":lua require('harpoon.ui').nav_file(5)<CR>")
-vim.keymap.set('n', '<C-6>', ":lua require('harpoon.ui').nav_file(6)<CR>")
-vim.keymap.set('n', '<C-7>', ":lua require('harpoon.ui').nav_file(7)<CR>")
-vim.keymap.set('n', '<C-8>', ":lua require('harpoon.ui').nav_file(8)<CR>")
-vim.keymap.set('n', '<C-9>', ":lua require('harpoon.ui').nav_file(9)<CR>")
-vim.keymap.set('n', '<leader>hn', ":lua require('harpoon.ui').nav_next()<CR>")
-vim.keymap.set('n', '<leader>hp', ":lua require('harpoon.ui').nav_prev()<CR>")
 vim.keymap.set('i', '<c-e>', '<esc>A', {noremap = true})
 vim.keymap.set('i', '<c-b>', '<esc>I', {noremap = true})
 
@@ -53,7 +40,8 @@ vim.keymap.set('v', '<F7>', ':CarbonNow<CR>')
 vim.keymap.set('n', '<F8>', ":lua require('util.background').getBackground()<CR>")
 vim.keymap.set('n', '<F9>', ":lua require('util.background').changeBackground()<CR>")
 
-vim.keymap.set('n', '<leader>gb', ":Gitsigns blame_line<CR>")
+vim.keymap.set('n', '<leader>gb', ":Gitsigns toggle_current_line_blame<CR>")
+vim.keymap.set('n', '<leader>gp', ":Gitsigns blame_line<CR>")
 
 -- Multiple cursors
 vim.cmd([[
